@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+*{
+    margin: 0;padding: 0;
+    /* background-color: rgb(125, 29, 29); */
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+body{
+ /* background-color: pink; */
+ background-color: black;
+}
+
+header{
+    background-color: #202020;
+    height: 10vh; width: 100%;
+    display: flex;
+}
+
+#logo{
+    height: 38px;
+    background-color: #202020;
+    position: relative;
+    left: 100px;
+    top: 15px;
+}
+
+#searchbox{
+    margin-left: 120px;
+    margin-top: 16px;
+    height: 45px;
+    width: 30vw;
+    background-color: black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid rgb(62, 62, 62);
+    
+}
+
+#searchbutton{
+    height: 45px; width: 50px;
+    margin-top: 16px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    background-color: rgb(62, 62, 62);
+}
+
+#searchbutton i{
+    font-size: 20px;
+    color: white;
+    background-color: rgb(62, 62, 62);
+}
+
+.lefthead1{
+    background-color: #202020;
+    display: flex;
+    margin-left: 65px;
+}
+
+.lefthead1 a{
+    height: 35px;
+    margin-top: 28px;
+    margin-right: 20px;
+    background-color: #202020;
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
+.lefthead1 a:hover{
+    color: grey;
+}
+
+.lefthead2{
+    display: flex;
+    margin-left: 50px;
+    background-color: #202020;
+}
+
+.lefthead2 a{
+    margin-right: 20px;
+    color: white;
+    margin-top: 28px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    background-color: #202020;
+}
+
+.lefthead2 a i{
+    font-size: 20px;
+    background-color: #202020;
+}
+
+/* SLIDER */
+
+.slider{
+    height: 300px;
+    width: 70%;
+    /* background-color: rgb(84, 84, 222); */
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide{
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: 1s;
+}
+
+.prev , .next{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #202020;
+    opacity: 0.8;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+}
+
+.prev{
+    top: 30vh;
+    left: 10vw;
+    border: none;
+}
+
+.next{
+    top: 30vh;
+    right: 10vw;
+    border: none;
+}
+
+
+
+
+/* NEW RELEASES **********************************************************************************/
+
+
+
+.newRelease{
+    height: 350px;
+    width:86%;
+    /* background-color: green; */
+    margin: auto;
+    margin-top: 50px;
+}
+
+#nrmore{
+    position: absolute;
+    right: 5vw;
+    bottom: 18.5vw;
+    color: red;
+    /* background-color: rgb(49, 49, 2); */
+    padding: 2px 15px 2px 15px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#nrmore:hover{
+    background-color: red;
+    color: white;
+}
+
+.newSongMix img{
+    margin-top: 0px;
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    opacity: 1;
+}
+
+.newRelease p{
+    font-size: 18px;
+    word-spacing: 5px;
+}
+
+.newSongMix{
+    /* background-color: blue; */
+    padding-right: 20px;
+    margin-top: 15px;
+    /* border: 0.5px solid green; */
+    width: 100%;
+
+}
+
+#lastNewSongMix{
+    padding-right: 0px;
+}
+
+.newReleaseContainer{
+    display: flex;
+    overflow: auto;
+    scroll-behavior: smooth;
+    /* background-color: skyblue; */
+    position: relative;
+    bottom: 5vh;
+
+}
+
+.newReleaseContainer a{
+    margin-top: 0px; padding-top: 0px;
+}
+
+.newReleaseContainer::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+
+.left , .right{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    opacity: 0.7;
+    border: none;
+    z-index: 1;
+}
+
+.left{
+    top: 15vh;
+}
+
+.right{
+    bottom: 25vh;
+    left: 82vw;
+}
+
+.playIcon{
+    height: 50px;width: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 15vh;
+    left: 5vw;
+    display: none;
+}
+
+.playIconVisible{
+    display: block;
+    opacity: 1;
+    z-index: 3;
+}
+
+.playIcon i{
+    margin-top: 18px;
+    color: red;
+}
+
+
+
+
+/* TOP CHARTS------------------------------------------------------------------------------------- */
+
+
+
+
+
+.topCharts{
+    height: 350px;
+    width: 86%;
+    /* background-color: green; */
+    margin: auto;
+}
+
+#tcmore{
+    position: absolute;
+    right: 5vw;
+    top: 105vh;
+    color: red;
+    /* background-color: rgb(49, 49, 2); */
+    padding: 2px 15px 2px 15px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#tcmore:hover{
+    background-color: red;
+    color: white;
+}
+
+.tcContainer{
+    display: flex;
+    overflow: auto;
+    scroll-behavior: smooth;
+    /* background-color: blue; */
+    position: relative;
+    width: 100.2%;
+    /* height: 350px; */
+}
+
+.tcContainer::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+
+.topChartsDiv{
+    padding-right: 20px;
+    margin-top: 25px;
+    /* border: 1px solid red; */
+    width: 100%;
+
+}
+
+.lastTopChartsDiv{
+    padding-right: 0px;
+}
+
+.topCharts img{
+    margin-top: 0px;
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    /* background-color: pink; */
+}
+
+.topChartsDiv p{
+    font-size: 17px;
+    word-spacing: 5px;
+}
+
+.tcleft, .tcright{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    opacity: 0.7;
+    border: none;
+    z-index: 1;
+    bottom: 20vh;
+}
+
+.tcright{
+    left: 78.7vw;
+}
+
+.tcPlayIcon{
+    height: 50px;width: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 15vh;
+    display: none;  
+}
+
+.tcPlayIconVisible{
+    display: block;
+    opacity: 1;
+    z-index: 3;
+}
+
+.tcPlayIcon i{
+    color: red;
+    margin-top: 15px;
+}
+
+
+
+/* ********************************TOP INDIE ARTISTS********************************************* */
+
+#tiMore{
+    position: absolute;
+    right: 5vw;
+    bottom: -52vh;
+    color: red;
+    /* background-color: rgb(49, 49, 2); */
+    padding: 2px 15px 2px 15px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#tiMore:hover{
+    background-color: red;
+    color: white;
+}
+
+.topIndie{
+    height: 350px;width: 86%;
+    /* background-color: olive; */
+    margin: auto;
+
+}
+
+.tiContainer{
+    display: flex;   
+    overflow: auto;
+    /* background-color: orchid; */
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.tiContainer img:hover{
+    opacity: 0.5;
+}
+
+.tiDiv{
+    /* border: 1px solid red; */
+    padding-right: 20px;
+}
+
+.lastTiDiv{
+    padding-right: 0px;
+}
+
+.tiContainer::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+
+.tiContainer img{
+    margin-top: 15px;
+    height: 200px; width: 200px;
+    border-radius: 50%;
+}
+
+.tiContainer p{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 17px;
+    word-spacing: 5px;
+}
+
+
+.tiLeft, .tiRight{
+    position: absolute;
+    height: 50px; width: 50px;
+    border-radius: 50%;
+    background-color: black; 
+    opacity: 0.7;
+    top: 165vh;
+    border: none;
+}
+
+.tiRight{
+    left: 89vw;
+}
+
+/* **********************************************************************************About Wynk******** */
+
+
+.aboutWynk{
+    height: 170px;
+    width: 86%;
+    /* background-color: orchid; */
+    margin: auto;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.aboutWynk h2{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.aboutWynk p{
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 80%;
+    /* background-color: hotpink; */
+    font-size: 15px;
+}
+
+.aboutWynk i{
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    left: 86.4vw;
+    bottom: -103.5vh;
+}
+
+
+/* ****************************************FOOTER********************************** */
+
+
+.f1{
+    background-color: #202020;
+    height: 80px; width: 86%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+#wynkMusic{
+    height: 75px;
+}
+
+#f1p1{
+    position: absolute;
+    bottom: -128vh;
+    left: 13vw;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#f1p2{
+    position: absolute;
+    bottom: -133vh;
+    left: 13vw;
+    font-size: 15px;
+    word-spacing: 3px;
+}
+
+#gplay{
+    position: absolute;
+    right: 17.7vw;
+    height: 50px;
+    width: 150px;
+    bottom: -133vh;
+}
+
+#appleStore{
+    position: absolute;
+    right: 7vw;
+    height: 50px;
+    width: 150px;
+    bottom: -133vh;
+}
+
+.f2{
+    height: 500px; width: 86%;
+    margin: auto;
+    margin-top: 50px;
+    /* background-color: purple; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: 0.8px solid grey;
+}
+.f2 div{
+    height: 100%; 
+    width: calc(86% / 4);
+}
+
+.f2 h3{
+    font-size: 17px;
+    margin-bottom: 10px;
+    /* background-color: hotpink; */
+}
+
+.f2 p{
+    font-size: 13px;
+    color: grey;
+    word-spacing: 5px;
+    margin-bottom: 50px;
+    /* background-color: teal; */
+}
+
+.f3{
+    height: 30px; width: 86%;
+    margin: auto;
+    /* background-color: rgb(41, 41, 28); */
+    padding-left: 15px;
+    word-spacing: 5px;
+    padding-bottom: 15px;
+    border-bottom: 0.8px solid gray;
+
+}
+
+.f3 h3{
+    font-size: 15px;
+}
+
+.f3 span{
+    color: gray;
+}
+
+.f3 i{
+    position: absolute;  
+    font-size: 40px;
+    top: 309vh;
+}
+
+#fb{
+    left: 77vw;
+}
+
+#tw{
+    left: 81vw;
+}
+
+#ig{
+    left: 84.6vw;
+}
+
+#yt{
+    left: 88vw;
+    top: 309vh;
+}
+
+
+.f4{
+    height: 150px; width: 86%;
+    /* background-color: slateblue; */
+    margin: auto;
+    font-size: 12px;
+}
+
+#f4p1{
+    margin-top: 20px;
+    color: grey;
+    width: 60vw;
+    /* background-color: goldenrod; */
+}
+
+#f4p2{
+    position: absolute;
+    left: 75vw;
+    bottom: -221vh;
+    color: grey;
+}
+
+/* **************************************************************PREOGRESS BAR********************** */
+
+.progressBar{
+    height: 80px; width: 86%;
+    margin: auto;
+    background-color: #202020;
+    position: fixed;
+    bottom: 0px; left: 7vw;
+    z-index: 100;
+}
+
+.range{
+    width: 100%;
+    height: 5px;
+    -webkit-appearance: none;
+    background-color: grey;
+    overflow: hidden;
+    position: absolute;
+    /* bottom: -238.4vh; */
+}
+
+.range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 5px;width: 10px;
+    /* border-radius: 50%; */
+    /* background-color: rgb(49, 48, 48); */
+    /* cursor: grab; */
+    box-shadow: -1000px 0 0 1000px red;
+}
+
+.play{
+    height: 50px; width: 50px;
+    border-radius: 50%;
+    background-color: red;
+    text-align: center;
+    position: absolute;
+    left: 40vw;
+    top: 2vh;
+}
+
+.play:hover{
+    background-color: darkred;
+}
+
+.play i{
+    margin-top: 16px;
+}
+
+.playPrev i{
+    font-size: 30px;
+    position: absolute;
+    left: 38vw;
+    top: 2.7vh;
+    color: grey;
+}
+
+.playNext i{
+    font-size: 30px;
+    position: absolute;
+    left: 44.4vw;
+    top: 2.7vh;
+    color: grey;
+}
+
+.shuffle i{
+    font-size: 20px;
+    position: absolute;
+    left: 32vw;
+    top: 2.7vh;
+    color: grey;
+}
+
+.repeat i{
+    font-size: 20px;
+    position: absolute;
+    left: 50vw;
+    top: 2.7vh;
+    color: grey;
+}
+
+
+#songImg{
+    height: 50px; width: 50px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+#songName{
+    position: relative;
+    left: 5vw;
+    bottom: 6vh;
+}
+
+#singerInfo{
+    position: relative;
+    color: grey;
+    left: 5vw;
+    bottom: 5.8vh;
+    font-size: 12px;
+}
+
+#songDuration{
+    position: relative;
+    left: 75vw;
+    bottom: 10vh;
+    font-size: 12px;
+    color: grey;
+    letter-spacing: 1.5px;
+}
+
+#totalDuration{
+    padding-left: 5px;
+    color: grey;
+}
